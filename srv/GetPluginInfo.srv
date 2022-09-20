@@ -1,0 +1,5 @@
+---
+string node_name
+string msg_pkg
+string plugin_name
+string[] config_files
