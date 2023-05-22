@@ -29,7 +29,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MessageInfo.msg"
   "srv/GetMessageInfo.srv"
   "srv/SetMessageInfo.srv"
-  "srv/GetPluginInfo.srv")
+  "srv/GetPluginInfo.srv"
+  DEPENDENCIES std_msgs
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
